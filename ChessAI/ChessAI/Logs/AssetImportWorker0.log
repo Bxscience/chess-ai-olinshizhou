@@ -479,3 +479,12 @@ Start importing Assets/Scipts/BoardGenerator.cs using Guid(a49b1f7a7905a430ba597
  -> (artifact id: 'fa24d6a8713de4ea9872b3defa4ec28a') in 0.000264 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 238.461519 seconds.
+  path: Assets/Scipts/BoardGenerator.cs
+  artifactKey: Guid(a49b1f7a7905a430ba597d11f3261a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/BoardGenerator.cs using Guid(a49b1f7a7905a430ba597d11f3261a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '967cfda6d6029fbffad07bb83ad63340') in 0.000348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
