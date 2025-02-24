@@ -73,7 +73,7 @@ PieceColor.Black);
                 if (piece.type != PieceType.None) {
                     GameObject piecePrefab = GetPrefabForPiece(piece);
                     if (piecePrefab != null) {
-                        Instantiate(piecePrefab, new Vector3(x, 0.5f, y), Quaternion.Euler(-90, 0, 0));
+                        Instantiate(piecePrefab, new Vector3(x, 5f, y), Quaternion.Euler(-90, 0, 0));
                     }
                 }
             }
