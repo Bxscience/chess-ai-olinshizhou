@@ -7,6 +7,8 @@ public class BoardGenerator : MonoBehaviour
     public const int BoardSize = 8;
     public ChessPiece[,] board = new ChessPiece[BoardSize, BoardSize];
     public GameObject chessBoard;
+    public GameObject whitePawnPrefab, whiteRookPrefab, whiteKnightPrefab, whiteBishopPrefab, whiteQueenPrefab, whiteKingPrefab;
+    public GameObject blackPawnPrefab, blackRookPrefab, blackKnightPrefab, blackBishopPrefab, blackQueenPrefab, blackKingPrefab;
     
     void Start()
     {
