@@ -19,7 +19,7 @@ public class BoardGenerator : MonoBehaviour
     void InitializeBoard()
     {
         // Builds physical chess board
-        Instantiate(chessBoard, new Vector3(0,0,0), Quaternion.Euler(-90, 0, 0));
+        Instantiate(chessBoard, new Vector3(21, 0, 21), Quaternion.Euler(-90, 0, -90));
 
         // Initialize all squares as empty
         for (int x = 0; x < BoardSize; x++) {
@@ -28,7 +28,7 @@ public class BoardGenerator : MonoBehaviour
             }
         }
         
-        // Place white pieces (bottom of the board)
+        // Instantiates white pieces (bottom of the board)
         board[0, 0] = new ChessPiece(PieceType.Rook, PieceColor.White);
         board[0, 1] = new ChessPiece(PieceType.Knight, PieceColor.White);
         board[0, 2] = new ChessPiece(PieceType.Bishop, PieceColor.White);
@@ -42,30 +42,22 @@ public class BoardGenerator : MonoBehaviour
             board[1, y] = new ChessPiece(PieceType.Pawn, PieceColor.White);
         }
         
-        // Place black pieces (top of the board)
-            board[7, 0] = new ChessPiece(PieceType.Rook, 
-    PieceColor.Black);
-            board[7, 1] = new ChessPiece(PieceType.Knight, 
-    PieceColor.Black);
-            board[7, 2] = new ChessPiece(PieceType.Bishop, 
-    PieceColor.Black);
-            board[7, 3] = new ChessPiece(PieceType.Queen, 
-    PieceColor.Black);
-            board[7, 4] = new ChessPiece(PieceType.King, 
-    PieceColor.Black);
-            board[7, 5] = new ChessPiece(PieceType.Bishop, 
-    PieceColor.Black);
-            board[7, 6] = new ChessPiece(PieceType.Knight, 
-    PieceColor.Black);
-            board[7, 7] = new ChessPiece(PieceType.Rook, 
-    PieceColor.Black);
+        //  black pieces (top of the board)
+        board[7, 0] = new ChessPiece(PieceType.Rook, PieceColor.Black);
+        board[7, 1] = new ChessPiece(PieceType.Knight, PieceColor.Black);
+        board[7, 2] = new ChessPiece(PieceType.Bishop, PieceColor.Black);
+        board[7, 3] = new ChessPiece(PieceType.Queen, PieceColor.Black);
+        board[7, 4] = new ChessPiece(PieceType.King, PieceColor.Black);
+        board[7, 5] = new ChessPiece(PieceType.Bishop, PieceColor.Black);
+        board[7, 6] = new ChessPiece(PieceType.Knight, PieceColor.Black);
+        board[7, 7] = new ChessPiece(PieceType.Rook, PieceColor.Black);
 
         for (int y = 0; y < BoardSize; y++) {
-            board[6, y] = new ChessPiece(PieceType.Pawn, 
-PieceColor.Black);
+            board[6, y] = new ChessPiece(PieceType.Pawn, PieceColor.Black);
         }
     }
-
+    
+    // Instantiation of pieces
     void SpawnPieces() {
         for (int x = 0; x < BoardSize; x++) {
             for (int y = 0; y < BoardSize; y++) {
@@ -73,7 +65,7 @@ PieceColor.Black);
                 if (piece.type != PieceType.None) {
                     GameObject piecePrefab = GetPrefabForPiece(piece);
                     if (piecePrefab != null) {
-                        Instantiate(piecePrefab, new Vector3(x, 5f, y), Quaternion.Euler(-90, 0, 0));
+                        Instantiate(piecePrefab, new Vector3(6*x, .1f, 6*y), Quaternion.Euler(-90, 0, 0));
                     }
                 }
             }
