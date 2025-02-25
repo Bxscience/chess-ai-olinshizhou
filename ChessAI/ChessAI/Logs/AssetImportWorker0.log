@@ -2677,3 +2677,756 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 156.882547 seconds.
+  path: Assets/Chess Set/fbx/Materials/Black Squares.mat
+  artifactKey: Guid(c7ba53a4b6745a342852498d501518dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Chess Set/fbx/Materials/Black Squares.mat using Guid(c7ba53a4b6745a342852498d501518dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b8cb5a3c1847e40db8f1e8473b22a2a1') in 0.067455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Chess Set/fbx/Materials/White Squares.mat
+  artifactKey: Guid(d6f6d820a99dc744bb6ebdbeb458c160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Chess Set/fbx/Materials/White Squares.mat using Guid(d6f6d820a99dc744bb6ebdbeb458c160) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0662cf4bbd0a4b37ad15e9b245341d41') in 0.005008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.603009 seconds.
+  path: Assets/Chess Set/fbx/Pieces/Chess Bishop.fbx
+  artifactKey: Guid(25f5852bdc32bf74790bd0cfd333a532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Chess Set/fbx/Pieces/Chess Bishop.fbx using Guid(25f5852bdc32bf74790bd0cfd333a532) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e50b441313ab2e71e277dc9822233458') in 0.033250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Chess Set/fbx/Pieces/Chess Queen.fbx
+  artifactKey: Guid(63372fdecc46ca243992469e037a3b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Chess Set/fbx/Pieces/Chess Queen.fbx using Guid(63372fdecc46ca243992469e037a3b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c7af38b74bbc1bbdd76f02791d694f5e') in 0.007891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Chess Set/fbx/Pieces/Chess Pawn.fbx
+  artifactKey: Guid(dc780bbe80163bc46883e8c2d96af493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Chess Set/fbx/Pieces/Chess Pawn.fbx using Guid(dc780bbe80163bc46883e8c2d96af493) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8ba193be13d38cf1b6ba7e9b8b4c9b5a') in 0.006727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Chess Set/fbx/Pieces/Chess Knight.fbx
+  artifactKey: Guid(5538ed982796ebd4c8cc731f2b530e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Chess Set/fbx/Pieces/Chess Knight.fbx using Guid(5538ed982796ebd4c8cc731f2b530e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1da6cb8717f7805b6d85b60dbf0e0279') in 0.008020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16b6a7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.352 seconds
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.038 seconds
+Domain Reload Profiling: 1391ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (180ms)
+		LoadAssemblies (197ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1039ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (523ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (431ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3720.
+Memory consumption went from 334.1 MB to 334.0 MB.
+Total: 3.565542 ms (FindLiveObjects: 0.175792 ms CreateObjectMapping: 0.078166 ms MarkObjects: 3.278292 ms  DeleteObjects: 0.033042 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 2f7161d1344279d438aee1f2235a5d08 -> 50f3375d4c33a46bb565e3a400577860
+========================================================================
+Received Import Request.
+  Time since last request: 15.463984 seconds.
+  path: Assets/Scipts/NewBehaviourScript.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/NewBehaviourScript.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7533aa3e37722571eb445d8ec8af23ba') in 0.001325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.350239 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e22c4dd6fe8b7e6953ab38452e7b4772') in 0.000292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16b6a7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.314 seconds
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.594 seconds
+Domain Reload Profiling: 908ms
+	BeginReloadAssembly (100ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (150ms)
+		LoadAssemblies (166ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (594ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (361ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (287ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3723.
+Memory consumption went from 339.9 MB to 339.8 MB.
+Total: 3.065209 ms (FindLiveObjects: 0.157667 ms CreateObjectMapping: 0.067500 ms MarkObjects: 2.808291 ms  DeleteObjects: 0.030917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PieceSelection.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: adca52561e336c680a0ac4aff5f0df7c -> 50f3375d4c33a46bb565e3a400577860
+========================================================================
+Received Import Request.
+  Time since last request: 3.875079 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.001136 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.081249 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000272 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.101574 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000311 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.105019 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000293 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100422 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000301 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.101296 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000610 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100418 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000684 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099767 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000648 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100252 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000414 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100905 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000548 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.098668 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000350 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099889 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000288 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.102100 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000620 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.098909 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000695 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100095 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000648 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099657 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000716 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099842 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000916 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100040 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000287 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099631 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000517 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099670 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000255 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.103497 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000589 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099722 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000257 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.101074 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000613 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099371 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000612 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100704 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000296 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099418 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000277 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100825 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000263 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.101537 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000550 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.099289 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000645 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.100751 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000487 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.101809 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000537 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.103678 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000357 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+  ERROR: Build asset version error: assets/scipts/pieceselection.cs in SourceAssetDB has modification time of '2025-02-25T14:07:58Z' while content on disk has modification time of '2025-02-25T14:08:11Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.623852 seconds.
+  path: Assets/Scipts/PieceSelection.cs
+  artifactKey: Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/PieceSelection.cs using Guid(827357933e76b459eb88696e5995ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3267a1a1d8818d3103a1849f05b84e59') in 0.000290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.883277 seconds.
+  path: Assets/Scipts/BoardGenerator.cs
+  artifactKey: Guid(a49b1f7a7905a430ba597d11f3261a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/BoardGenerator.cs using Guid(a49b1f7a7905a430ba597d11f3261a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '696b01d9446a27b343d0418a3cc342c5') in 0.000535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16b6a7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.342 seconds
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.831 seconds
+Domain Reload Profiling: 1173ms
+	BeginReloadAssembly (107ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (167ms)
+		LoadAssemblies (187ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (831ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (366ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (291ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3093 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3725.
+Memory consumption went from 345.6 MB to 345.6 MB.
+Total: 3.105625 ms (FindLiveObjects: 0.165292 ms CreateObjectMapping: 0.074750 ms MarkObjects: 2.835333 ms  DeleteObjects: 0.029792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PieceSelection.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16b6a7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.300 seconds
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.614 seconds
+Domain Reload Profiling: 914ms
+	BeginReloadAssembly (100ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (161ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (614ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (382ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (304ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 1.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3728.
+Memory consumption went from 351.6 MB to 351.6 MB.
+Total: 4.561500 ms (FindLiveObjects: 0.239125 ms CreateObjectMapping: 0.111417 ms MarkObjects: 4.169583 ms  DeleteObjects: 0.040625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PieceSelection.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
