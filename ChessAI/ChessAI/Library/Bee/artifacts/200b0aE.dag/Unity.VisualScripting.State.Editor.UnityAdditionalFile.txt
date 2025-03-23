@@ -1,1 +1,1 @@
-/Users/ericshi/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI
+/Users/tyolin/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI

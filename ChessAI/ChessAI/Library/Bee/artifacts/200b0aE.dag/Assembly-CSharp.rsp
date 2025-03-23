@@ -365,6 +365,15 @@
 "Assets/Scipts/Pieces/Rook.cs"
 "Assets/Scipts/Player.cs"
 "Assets/Scipts/TileSelector.cs"
+"Assets/UIStuff/GameHome.cs"
+"Assets/UIStuff/HomeAI.cs"
+"Assets/UIStuff/HomeMultiplayer.cs"
+"Assets/UIStuff/LoseAI.cs"
+"Assets/UIStuff/LoseHome.cs"
+"Assets/UIStuff/LoseMultiplayer.cs"
+"Assets/UIStuff/WinAI.cs"
+"Assets/UIStuff/WinHome.cs"
+"Assets/UIStuff/WinMultiplayer.cs"
 -langversion:9.0
 /deterministic
 /optimize+
