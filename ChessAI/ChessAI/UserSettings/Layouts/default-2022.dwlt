@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1470
     height: 797
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 872
+  controlID: 16
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 873
+  controlID: 17
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 819
+  controlID: 18
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 294
     height: 536.5
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 346.5
     height: 747
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -416,9 +416,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f25a0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e8b8ffff46b9ffff96c6ffffeec7ffff4ac9ffff6aceffffb4cefffffaceffff40cfffff7ed0ffffc4d0ffff0ed1ffff64d1ffffb4d1fffffad1ffff44d2ffff80d2ffff2ad3ffff70d3ffffb6d3ffff12d4ffff58d4ffff9ed4ffffead4ffff24d5ffff6ad5ffffb4d5fffff0d5ffff32d6ffff78d6ffffc2d6fffff8d6ffff40d7ffff86d7ffffccd7ffff28d8ffff7cd8ffffc2d8ffff0cd9ffffbcd9ffff08daffff4edaffffa4daffffc6dbffff0cdcffff52dcffff7cddffffc2ddffff4ce2ffff92e2ffffcee2ffff18e3ffff5ee3ffffa4e3ffff00e4ffff46e4ffff8ce4ffffb4e5ffff28e6ffff72e6ffffaee6ffff46e7ffff8ce7ffffd6e7ffff28e8ffff6ee8ffffb8e8fffff4e8ffff3ee9ffff84e9fffffce9ffff50eaffff6aecffff3aedffff70edffffa0efffffeaefffff26f0ffff6cf0ffffacf0ffff0cf3ffff52f3ffffd0f3ffff0ef4ffff58f4ffff9ef4ffffe4f4ffff2af5ffff74f5ffffc0f5ffff06f6ffff42f6ffff88f6ffffdaf6ffffc6f7ffffecf9ffffe2faffff04730000
+      m_ExpandedIDs: 18f4ffff6af4ffff1af9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -935,7 +935,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -943,16 +943,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/ericshi/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: da5a0000
-    m_LastClickedID: 23258
-    m_ExpandedIDs: 00000000da5a0000dc5a0000ec5a000000ca9a3b
+    m_SelectedIDs: ac5c0000
+    m_LastClickedID: 23724
+    m_ExpandedIDs: 00000000965c0000985c00009a5c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -980,7 +980,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da5a0000dc5a000000ca9a3b
+    m_ExpandedIDs: 00000000965c0000985c00009a5c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
