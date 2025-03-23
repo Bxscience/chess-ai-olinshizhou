@@ -2,11 +2,11 @@ Unity Editor version:    2022.3.46f1 (8e9b8558c41a)
 Branch:                  2022.3/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 15.3.1 (Build 24D70)
+macOS version:           Version 15.3.2 (Build 24D81)
 Darwin version:          24.3.0
-Architecture:            x86_64
+Architecture:            arm64
 Running under Rosetta:   NO
-Available memory:        8192 MB
+Available memory:        16384 MB
 Using pre-set license
 Pro License: YES
 
@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/unknownunknown/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI
+/Users/ericshi/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50142
-Successfully changed project path to: /Users/unknownunknown/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI
-/Users/unknownunknown/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI
+65115
+Successfully changed project path to: /Users/ericshi/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI
+/Users/ericshi/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,125 +56,217 @@ Successfully changed project path to: /Users/unknownunknown/Documents/GitHub/che
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [140704646773504]  Target information:
+Player connection [8301758528]  Target information:
 
-Player connection [140704646773504]  * "[IP] 100.114.152.8 [Port] 0 [Flags] 2 [Guid] 1646292447 [EditorId] 1646292447 [Version] 1048832 [Id] OSXEditor(0,Unknowns-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
-
-Player connection [140704646773504] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [140704646773504] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8301758528] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8301758528] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.46f1 (8e9b8558c41a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.46f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/unknownunknown/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI/Assets
+[Subsystems] Discovering subsystems at path /Users/ericshi/Documents/GitHub/chess-ai-olinshizhou/ChessAI/ChessAI/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics (low power)
+ preferred device: Apple M2 (high power)
 Metal devices available: 1
-0: Intel(R) Iris(TM) Plus Graphics (low power)
-Using device Intel(R) Iris(TM) Plus Graphics (low power)
-Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics
-Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+0: Apple M2 (high power)
+Using device Apple M2 (high power)
+Initializing Metal device caps: Apple M2
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.46f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.46f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.46f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56379
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.46f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.46f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.008493 seconds.
-- Loaded All Assemblies, in  0.769 seconds
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.46f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001633 seconds.
+- Loaded All Assemblies, in  0.186 seconds
+Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.395 seconds
-Domain Reload Profiling: 1164ms
-	BeginReloadAssembly (348ms)
+- Finished resetting the current domain, in  0.138 seconds
+Domain Reload Profiling: 324ms
+	BeginReloadAssembly (42ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (79ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (239ms)
-		LoadAssemblies (347ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (88ms)
+		LoadAssemblies (42ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (234ms)
-			TypeCache.Refresh (231ms)
-				TypeCache.ScanAssembly (212ms)
+		AnalyzeDomain (87ms)
+			TypeCache.Refresh (86ms)
+				TypeCache.ScanAssembly (77ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (396ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (138ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (326ms)
+		SetupLoadedEditorAssemblies (110ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (238ms)
-			ProcessInitializeOnLoadMethodAttributes (63ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (78ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Compilation Pipeline: Could not read file Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef
-Fatal Error! Compilation Pipeline: Could not read file Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef
-Obtained 35 stack frames.
-#0  0x007ff817a44c52 in __pthread_kill
-#1  0x007ff81799fb19 in abort
-#2  0x000001119bb8be in CrashDontLaunchBugReporter()
-#3  0x000001103b8152 in EditorMonoConsole::LogToConsoleImplementation(CppLogEntry&)
-#4  0x000001103b7cc3 in EditorMonoConsole::LogToConsoleImplementation(DebugStringToFileData const&)
-#5  0x000001103b985b in LogToConsoleImplementation(DebugStringToFileData const&)
-#6  0x00000111291e22 in DebugStringToFilePostprocessedStacktrace(DebugStringToFileData const&)
-#7  0x0000011129293b in DebugStringToFile(DebugStringToFileData const&)
-#8  0x00000110938c25 in RegisterAssemblyDefinition(core::basic_string<char, core::StringStorageDefault<char>> const&)
-#9  0x00000110daab48 in UpdateScriptCompilationPipelineCaches(ScriptChanges const&, bool)
-#10 0x00000110dab68a in WorkerInitializeAndProcessScriptChanges()
-#11 0x000001105697e2 in Application::InitializeProject()
-#12 0x000001119c8d6b in -[EditorApplication applicationDidFinishLaunching:]
-#13 0x007ff817b5b15c in __CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
-#14 0x007ff817be8782 in ___CFXRegistrationPost_block_invoke
-#15 0x007ff817be86d1 in _CFXRegistrationPost
-#16 0x007ff817b2adfc in _CFXNotificationPost
-#17 0x007ff818b4a25b in -[NSNotificationCenter postNotificationName:object:userInfo:]
-#18 0x007ff81b4d057f in -[NSApplication _postDidFinishNotification]
-#19 0x007ff81b4d02c4 in -[NSApplication _sendFinishLaunchingNotification]
-#20 0x007ff81b4ce266 in -[NSApplication(NSAppleEventHandling) _handleAEOpenEvent:]
-#21 0x007ff81b4cdeb9 in -[NSApplication(NSAppleEventHandling) _handleCoreEvent:withReplyEvent:]
-#22 0x007ff818b73471 in -[NSAppleEventManager dispatchRawAppleEvent:withRawReply:handlerRefCon:]
-#23 0x007ff818b73285 in _NSAppleEventManagerGenericHandler
-#24 0x007ff81f20ce95 in _AppleEventsCheckInAppWithBlock
-#25 0x007ff81f20c723 in _AppleEventsCheckInAppWithBlock
-#26 0x007ff81f206028 in aeProcessAppleEvent
-#27 0x007ff8232a3836 in AEProcessAppleEvent
-#28 0x007ff81b4c6e6a in _DPSNextEvent
-#29 0x007ff81bf1b8b8 in -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
-#30 0x007ff81b4b7aa9 in -[NSApplication run]
-#31 0x007ff81b48ad34 in NSApplicationMain
-#32 0x000001119e578c in EditorMain(int, char const**)
-#33 0x000001119e5ad9 in main
-#34 0x007ff8176f02cd in start
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.338 seconds
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.332 seconds
+Domain Reload Profiling: 670ms
+	BeginReloadAssembly (66ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (139ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (112ms)
+			TypeCache.Refresh (101ms)
+				TypeCache.ScanAssembly (88ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (332ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (250ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (201ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.46f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3126 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (49.1 KB). Loaded Objects now: 3595.
+Memory consumption went from 128.5 MB to 128.5 MB.
+Total: 2.378958 ms (FindLiveObjects: 0.091917 ms CreateObjectMapping: 0.052583 ms MarkObjects: 2.168292 ms  DeleteObjects: 0.065625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 222174.875033 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(dfd7c28202e6b40c0b1df915720f04fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(dfd7c28202e6b40c0b1df915720f04fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '384ebf163dea8a2cf2e56fedbd01febf') in 0.001033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.648583 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(dfd7c28202e6b40c0b1df915720f04fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(dfd7c28202e6b40c0b1df915720f04fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7e2acfc25315134eaebcf381d9ef3f46') in 0.000249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x3120a7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.218 seconds
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.643 seconds
+Domain Reload Profiling: 861ms
+	BeginReloadAssembly (75ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (101ms)
+		LoadAssemblies (119ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (643ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (248ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (32ms)
+			ProcessInitializeOnLoadAttributes (196ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3598.
+Memory consumption went from 129.9 MB to 129.9 MB.
+Total: 2.377375 ms (FindLiveObjects: 0.108250 ms CreateObjectMapping: 0.053042 ms MarkObjects: 2.193167 ms  DeleteObjects: 0.022417 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
