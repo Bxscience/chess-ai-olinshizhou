@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject blackKnight;
     public GameObject blackRook;
     public GameObject blackPawn;
-
+    
     private GameObject[,] pieces;
     private List<GameObject> movedPawns;
 

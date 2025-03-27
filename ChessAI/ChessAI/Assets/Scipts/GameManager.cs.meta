@@ -1,11 +1,22 @@
 fileFormatVersion: 2
 guid: 0467ea60d08c74bf09df7bda660533e7
-timeCreated: 1513261522
-licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - board: {instanceID: 0}
+  - whiteKing: {instanceID: 0}
+  - whiteQueen: {instanceID: 0}
+  - whiteBishop: {instanceID: 0}
+  - whiteKnight: {instanceID: 0}
+  - whiteRook: {instanceID: 0}
+  - whitePawn: {instanceID: 0}
+  - blackKing: {instanceID: 0}
+  - blackQueen: {instanceID: 0}
+  - blackBishop: {instanceID: 0}
+  - blackKnight: {instanceID: 0}
+  - blackRook: {instanceID: 0}
+  - blackPawn: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
