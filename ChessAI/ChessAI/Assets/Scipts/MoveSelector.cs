@@ -59,7 +59,7 @@ public class MoveSelector : MonoBehaviour
             tileHighlight.SetActive(false);
         }
     }
-
+    
     private void CancelMove()
     {
         this.enabled = false;
@@ -86,6 +86,9 @@ public class MoveSelector : MonoBehaviour
         {
             CancelMove();
         }
+
+
+        
 
         foreach (Vector2Int loc in moveLocations)
         {
