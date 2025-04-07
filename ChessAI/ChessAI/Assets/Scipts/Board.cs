@@ -22,7 +22,6 @@ public class Board : MonoBehaviour
         Piece pieceComponent = piece.GetComponent<Piece>();
         piece.transform.position = Geometry.PointFromGrid(gridPoint); // Move passed paramater piece
         
-        // Extra Condition to allow for castling rights :: GameManager.instance.PieceAtGrid(queenSideOldRookLocation).GetComponent<Piece>().type == PieceType.Rook
         // If a castle move is performed:
         Vector2Int kingSideOldRookLocation = new Vector2Int(gridPoint.x + 1, gridPoint.y);
         Vector2Int kingSideNewRookLocation = new Vector2Int(gridPoint.x - 1, gridPoint.y);
@@ -30,17 +29,19 @@ public class Board : MonoBehaviour
         Vector2Int queenSideNewRookLocation = new Vector2Int(gridPoint.x + 1, gridPoint.y);
         
         // KingSide Castling
-        if (piece.GetComponent<Piece>().type == PieceType.King && gridPoint.x == 6 && GameManager.instance.currentPlayer.kingSideCastlingRights)
+        if (piece.GetComponent<Piece>().type == PieceType.King && gridPoint.x == 6 && GameManager.instance.currentPlayer.kingSideCastlingRights && !GameManager.instance.currentPlayer.hasCastled)
         {
             KingSideCastle(kingSideOldRookLocation, kingSideNewRookLocation);
             GameManager.instance.removeCastlingRights();
+            GameManager.instance.currentPlayer.hasCastled = true;
         }
 
         // QueenSide Castling
-        if (piece.GetComponent<Piece>().type == PieceType.King && gridPoint.x == 2 && GameManager.instance.currentPlayer.queenSideCastlingRights)
+        if (piece.GetComponent<Piece>().type == PieceType.King && gridPoint.x == 2 && GameManager.instance.currentPlayer.queenSideCastlingRights && !GameManager.instance.currentPlayer.hasCastled)
         {
             QueenSideCastle(queenSideOldRookLocation, queenSideNewRookLocation);
             GameManager.instance.removeCastlingRights();
+            GameManager.instance.currentPlayer.hasCastled = true;
         }
     }
 

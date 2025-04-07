@@ -8,7 +8,7 @@ public class Player
 
     public string name;
     public int forward;
-    public bool kingSideCastlingRights, queenSideCastlingRights;
+    public bool kingSideCastlingRights, queenSideCastlingRights, hasCastled;
 
     public Player(string name, bool positiveZMovement)
     {
@@ -17,6 +17,7 @@ public class Player
         capturedPieces = new List<GameObject>();
         kingSideCastlingRights = false;
         queenSideCastlingRights = false;
+        hasCastled = false;
 
         if (positiveZMovement == true)
         {

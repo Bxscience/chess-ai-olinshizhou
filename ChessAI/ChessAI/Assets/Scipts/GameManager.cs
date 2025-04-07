@@ -8,15 +8,15 @@ public class GameManager : MonoBehaviour
     public Board board;
 
     public GameObject whiteKing;
-    // public GameObject whiteQueen;
-    // public GameObject whiteBishop;
+    public GameObject whiteQueen;
+    public GameObject whiteBishop;
     public GameObject whiteKnight;
     public GameObject whiteRook;
     public GameObject whitePawn;
 
     public GameObject blackKing;
-    // public GameObject blackQueen;
-    // public GameObject blackBishop;
+    public GameObject blackQueen;
+    public GameObject blackBishop;
     public GameObject blackKnight;
     public GameObject blackRook;
     public GameObject blackPawn;
@@ -54,10 +54,10 @@ public class GameManager : MonoBehaviour
     {
         AddPiece(whiteRook, white, 0, 0);
         AddPiece(whiteKnight, white, 1, 0);
-        // AddPiece(whiteBishop, white, 2, 0);
-        // AddPiece(whiteQueen, white, 3, 0);
+        AddPiece(whiteBishop, white, 2, 0);
+        AddPiece(whiteQueen, white, 3, 0);
         AddPiece(whiteKing, white, 4, 0);
-        // AddPiece(whiteBishop, white, 5, 0);
+        AddPiece(whiteBishop, white, 5, 0);
         AddPiece(whiteKnight, white, 6, 0);
         AddPiece(whiteRook, white, 7, 0);
 
@@ -68,10 +68,10 @@ public class GameManager : MonoBehaviour
 
         AddPiece(blackRook, black, 0, 7);
         AddPiece(blackKnight, black, 1, 7);
-        // AddPiece(blackBishop, black, 2, 7);
-        // AddPiece(blackQueen, black, 3, 7);
+        AddPiece(blackBishop, black, 2, 7);
+        AddPiece(blackQueen, black, 3, 7);
         AddPiece(blackKing, black, 4, 7);
-        // AddPiece(blackBishop, black, 5, 7);
+        AddPiece(blackBishop, black, 5, 7);
         AddPiece(blackKnight, black, 6, 7);
         AddPiece(blackRook, black, 7, 7);
 
@@ -133,11 +133,16 @@ public class GameManager : MonoBehaviour
             removeCastlingRights();
         }
 
-        if (pieceComponent.type == PieceType.King && canKingSideCastle(startGridPoint))
+        if ((startGridPoint.y == 0 || startGridPoint.y == 7) && canKingSideCastle(startGridPoint) && !currentPlayer.hasCastled)
         {
-            Debug.Log("Checked for KingSideCastle");
             giveKingSideCastlingRights();
         }
+        
+        if ((startGridPoint.y == 0 || startGridPoint.y == 7) && canQueenSideCastle(startGridPoint) && !currentPlayer.hasCastled)
+        {
+            giveQueenSideCastlingRights();
+        }
+
     }
 
     public bool HasPawnMoved(GameObject pawn)
@@ -152,34 +157,64 @@ public class GameManager : MonoBehaviour
 
     public bool canKingSideCastle(Vector2Int gridPoint)
     {
-        Vector2Int kingSideOldRookLocation = new Vector2Int(gridPoint.x + 3, gridPoint.y);
+        if (currentPlayer.hasCastled)
+            return false;
+        
+        Vector2Int kingSideOldRookLocation;
+        if(currentPlayer.name == "white")
+        {
+            kingSideOldRookLocation = GridForPiece(pieces[7,0]);
+        }
+        else
+        {
+            kingSideOldRookLocation = GridForPiece(pieces[7,7]);
+        }
         Vector2Int bishopLocation = new Vector2Int(5,gridPoint.y);
         Vector2Int knightLocation = new Vector2Int(6,gridPoint.y);
-        return (PieceAtGrid(bishopLocation) == false && PieceAtGrid(knightLocation) == false && PieceAtGrid(kingSideOldRookLocation).GetComponent<Piece>().type == PieceType.Rook);
+        return (PieceAtGrid(bishopLocation) == false && PieceAtGrid(knightLocation) == false) && PieceAtGrid(kingSideOldRookLocation).GetComponent<Piece>().type == PieceType.Rook;
+    }
+
+    public bool canQueenSideCastle(Vector2Int gridPoint)
+    {
+        if (currentPlayer.hasCastled)
+            return false;
+        
+        Vector2Int queenSideOldRookLocation;
+        if(currentPlayer.name == "white")
+        {
+            queenSideOldRookLocation = GridForPiece(pieces[0,0]);
+        }
+        else
+        {
+            queenSideOldRookLocation = GridForPiece(pieces[0,7]);
+        }
+        Vector2Int queenLocation = new Vector2Int(3,gridPoint.y);
+        Vector2Int bishopLocation = new Vector2Int(2,gridPoint.y);
+        Vector2Int knightLocation = new Vector2Int(1,gridPoint.y);
+        return (PieceAtGrid(bishopLocation) == false && PieceAtGrid(knightLocation) == false && PieceAtGrid(queenLocation) == false) && PieceAtGrid(queenSideOldRookLocation).GetComponent<Piece>().type == PieceType.Rook;
     }
 
     // Giving castling rights to player
     public void giveKingSideCastlingRights()
     {
-        Debug.Log("KingSide castle available");
+        Debug.Log(currentPlayer.name + " has king side castle available");
         currentPlayer.kingSideCastlingRights = true;
     }
 
-    // // Giving castling rights to player
-    // public void giveQueenSideCastlingRights()
-    // {
-    //     // if (PieceAtGrid(bishopLocation) == false && PieceAtGrid(knightLocation) == false)
-    //     // {
-    //     //     currentPlayer.queenSideCastlingRights = true;
-    //     // }
-    // }
+    // Giving castling rights to player
+    public void giveQueenSideCastlingRights()
+    {
+        Debug.Log(currentPlayer.name + " has queen side castle available");
+        currentPlayer.queenSideCastlingRights = true;
+    }
 
     // Removes castling rights from player
     public void removeCastlingRights()
     {
         currentPlayer.kingSideCastlingRights = false;
         currentPlayer.queenSideCastlingRights = false;
-        Debug.Log("Removed castling rights");
+        currentPlayer.hasCastled = true;
+        Debug.Log(currentPlayer.name + " lost castling rights");
     }
 
 
