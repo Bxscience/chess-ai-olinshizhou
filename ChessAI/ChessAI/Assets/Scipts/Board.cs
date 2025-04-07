@@ -16,10 +16,44 @@ public class Board : MonoBehaviour
     {
         Destroy(piece);
     }
-
-    public void MovePiece(GameObject piece, Vector2Int gridPoint)
+    
+    public void MovePiece(GameObject piece, Vector2Int gridPoint) // Physical board movement
     {
-        piece.transform.position = Geometry.PointFromGrid(gridPoint);
+        Piece pieceComponent = piece.GetComponent<Piece>();
+        piece.transform.position = Geometry.PointFromGrid(gridPoint); // Move passed paramater piece
+        
+        // Extra Condition to allow for castling rights :: GameManager.instance.PieceAtGrid(queenSideOldRookLocation).GetComponent<Piece>().type == PieceType.Rook
+        // If a castle move is performed:
+        Vector2Int kingSideOldRookLocation = new Vector2Int(gridPoint.x + 1, gridPoint.y);
+        Vector2Int kingSideNewRookLocation = new Vector2Int(gridPoint.x - 1, gridPoint.y);
+        Vector2Int queenSideOldRookLocation = new Vector2Int(gridPoint.x - 2, gridPoint.y);
+        Vector2Int queenSideNewRookLocation = new Vector2Int(gridPoint.x + 1, gridPoint.y);
+        
+        // KingSide Castling
+        if (piece.GetComponent<Piece>().type == PieceType.King && gridPoint.x == 6 && GameManager.instance.currentPlayer.kingSideCastlingRights)
+        {
+            KingSideCastle(kingSideOldRookLocation, kingSideNewRookLocation);
+            GameManager.instance.removeCastlingRights();
+        }
+
+        // QueenSide Castling
+        if (piece.GetComponent<Piece>().type == PieceType.King && gridPoint.x == 2 && GameManager.instance.currentPlayer.queenSideCastlingRights)
+        {
+            QueenSideCastle(queenSideOldRookLocation, queenSideNewRookLocation);
+            GameManager.instance.removeCastlingRights();
+        }
+    }
+
+    public void KingSideCastle(Vector2Int oldRookLocation, Vector2Int newRookLocation)
+    {
+        GameManager.instance.Move(GameManager.instance.PieceAtGrid(oldRookLocation), newRookLocation);
+        Debug.Log("KingSideCastled");
+    }
+
+    public void QueenSideCastle(Vector2Int oldRookLocation, Vector2Int newRookLocation)
+    {
+        GameManager.instance.Move(GameManager.instance.PieceAtGrid(oldRookLocation), newRookLocation);
+        Debug.Log("KingSideCastled");
     }
 
     public void SelectPiece(GameObject piece)

@@ -8,12 +8,15 @@ public class Player
 
     public string name;
     public int forward;
+    public bool kingSideCastlingRights, queenSideCastlingRights;
 
     public Player(string name, bool positiveZMovement)
     {
         this.name = name;
         pieces = new List<GameObject>();
         capturedPieces = new List<GameObject>();
+        kingSideCastlingRights = false;
+        queenSideCastlingRights = false;
 
         if (positiveZMovement == true)
         {

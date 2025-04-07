@@ -35,22 +35,30 @@ public class MoveSelector : MonoBehaviour
             tileHighlight.transform.position = Geometry.PointFromGrid(gridPoint);
             if (Input.GetMouseButtonDown(0))
             {
-                // Reference Point 2: check for valid move location
+                // Allows current player to change move in case of mind change.
+                if (this.enabled == true){
+                    CancelMove();
+                    tileHighlight.SetActive(false);
+                }
+                
+                // No valid piece was selected
                 if (!moveLocations.Contains(gridPoint))
                 {
                     return;
                 }
 
+                // Making valid move to empty square
                 if (GameManager.instance.PieceAtGrid(gridPoint) == null)
                 {
                     GameManager.instance.Move(movingPiece, gridPoint);
                 }
                 else
+                // Removing captured piece, then making valid move
                 {
                     GameManager.instance.CapturePieceAt(gridPoint);
                     GameManager.instance.Move(movingPiece, gridPoint);
                 }
-                // Reference Point 3: capture enemy piece here later
+                
                 ExitState();
             }
         }
@@ -79,6 +87,11 @@ public class MoveSelector : MonoBehaviour
         movingPiece = piece;
         this.enabled = true;
 
+        // Check to see if castling is available
+        
+
+
+
         moveLocations = GameManager.instance.MovesForPiece(movingPiece);
         locationHighlights = new List<GameObject>();
 
@@ -86,9 +99,6 @@ public class MoveSelector : MonoBehaviour
         {
             CancelMove();
         }
-
-
-        
 
         foreach (Vector2Int loc in moveLocations)
         {

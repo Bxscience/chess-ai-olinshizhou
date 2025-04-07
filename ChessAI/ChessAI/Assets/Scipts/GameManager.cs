@@ -8,21 +8,21 @@ public class GameManager : MonoBehaviour
     public Board board;
 
     public GameObject whiteKing;
-    public GameObject whiteQueen;
-    public GameObject whiteBishop;
+    // public GameObject whiteQueen;
+    // public GameObject whiteBishop;
     public GameObject whiteKnight;
     public GameObject whiteRook;
     public GameObject whitePawn;
 
     public GameObject blackKing;
-    public GameObject blackQueen;
-    public GameObject blackBishop;
+    // public GameObject blackQueen;
+    // public GameObject blackBishop;
     public GameObject blackKnight;
     public GameObject blackRook;
     public GameObject blackPawn;
     
     private GameObject[,] pieces;
-    private List<GameObject> movedPawns;
+    private List<GameObject> movedPieces;
 
     private Player white;
     private Player black;
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     void Start ()
     {
         pieces = new GameObject[8, 8];
-        movedPawns = new List<GameObject>();
+        movedPieces = new List<GameObject>();
 
         white = new Player("white", true);
         black = new Player("black", false);
@@ -46,16 +46,18 @@ public class GameManager : MonoBehaviour
         otherPlayer = black;
 
         InitialSetup();
+        Debug.Log(currentPlayer.name + "'s turn");
+
     }
 
     private void InitialSetup()
     {
         AddPiece(whiteRook, white, 0, 0);
         AddPiece(whiteKnight, white, 1, 0);
-        AddPiece(whiteBishop, white, 2, 0);
-        AddPiece(whiteQueen, white, 3, 0);
+        // AddPiece(whiteBishop, white, 2, 0);
+        // AddPiece(whiteQueen, white, 3, 0);
         AddPiece(whiteKing, white, 4, 0);
-        AddPiece(whiteBishop, white, 5, 0);
+        // AddPiece(whiteBishop, white, 5, 0);
         AddPiece(whiteKnight, white, 6, 0);
         AddPiece(whiteRook, white, 7, 0);
 
@@ -66,10 +68,10 @@ public class GameManager : MonoBehaviour
 
         AddPiece(blackRook, black, 0, 7);
         AddPiece(blackKnight, black, 1, 7);
-        AddPiece(blackBishop, black, 2, 7);
-        AddPiece(blackQueen, black, 3, 7);
+        // AddPiece(blackBishop, black, 2, 7);
+        // AddPiece(blackQueen, black, 3, 7);
         AddPiece(blackKing, black, 4, 7);
-        AddPiece(blackBishop, black, 5, 7);
+        // AddPiece(blackBishop, black, 5, 7);
         AddPiece(blackKnight, black, 6, 7);
         AddPiece(blackRook, black, 7, 7);
 
@@ -95,6 +97,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
     public List<Vector2Int> MovesForPiece(GameObject pieceObject)
     {
         Piece piece = pieceObject.GetComponent<Piece>();
@@ -110,29 +113,75 @@ public class GameManager : MonoBehaviour
         return locations;
     }
 
+    // Making moves in 2D array of pieces
     public void Move(GameObject piece, Vector2Int gridPoint)
     {
         Piece pieceComponent = piece.GetComponent<Piece>();
+        Vector2Int startGridPoint = GridForPiece(piece); // Initial position
+        pieces[startGridPoint.x, startGridPoint.y] = null;
+        pieces[gridPoint.x, gridPoint.y] = piece; // Final position
+        board.MovePiece(piece, gridPoint); // Physical board update
+
         if (pieceComponent.type == PieceType.Pawn && !HasPawnMoved(piece))
         {
-            movedPawns.Add(piece);
+            movedPieces.Add(piece);
         }
 
-        Vector2Int startGridPoint = GridForPiece(piece);
-        pieces[startGridPoint.x, startGridPoint.y] = null;
-        pieces[gridPoint.x, gridPoint.y] = piece;
-        board.MovePiece(piece, gridPoint);
-    }
+        if (pieceComponent.type == PieceType.King && !HasKingMoved(piece))
+        {
+            movedPieces.Add(piece);
+            removeCastlingRights();
+        }
 
-    public void PawnMoved(GameObject pawn)
-    {
-        movedPawns.Add(pawn);
+        if (pieceComponent.type == PieceType.King && canKingSideCastle(startGridPoint))
+        {
+            Debug.Log("Checked for KingSideCastle");
+            giveKingSideCastlingRights();
+        }
     }
 
     public bool HasPawnMoved(GameObject pawn)
     {
-        return movedPawns.Contains(pawn);
+        return movedPieces.Contains(pawn);
     }
+
+    public bool HasKingMoved(GameObject king)
+    {
+        return movedPieces.Contains(king);
+    }
+
+    public bool canKingSideCastle(Vector2Int gridPoint)
+    {
+        Vector2Int kingSideOldRookLocation = new Vector2Int(gridPoint.x + 3, gridPoint.y);
+        Vector2Int bishopLocation = new Vector2Int(5,gridPoint.y);
+        Vector2Int knightLocation = new Vector2Int(6,gridPoint.y);
+        return (PieceAtGrid(bishopLocation) == false && PieceAtGrid(knightLocation) == false && PieceAtGrid(kingSideOldRookLocation).GetComponent<Piece>().type == PieceType.Rook);
+    }
+
+    // Giving castling rights to player
+    public void giveKingSideCastlingRights()
+    {
+        Debug.Log("KingSide castle available");
+        currentPlayer.kingSideCastlingRights = true;
+    }
+
+    // // Giving castling rights to player
+    // public void giveQueenSideCastlingRights()
+    // {
+    //     // if (PieceAtGrid(bishopLocation) == false && PieceAtGrid(knightLocation) == false)
+    //     // {
+    //     //     currentPlayer.queenSideCastlingRights = true;
+    //     // }
+    // }
+
+    // Removes castling rights from player
+    public void removeCastlingRights()
+    {
+        currentPlayer.kingSideCastlingRights = false;
+        currentPlayer.queenSideCastlingRights = false;
+        Debug.Log("Removed castling rights");
+    }
+
 
     public void CapturePieceAt(Vector2Int gridPoint)
     {
@@ -170,6 +219,7 @@ public class GameManager : MonoBehaviour
             return null;
         }
         return pieces[gridPoint.x, gridPoint.y];
+
     }
 
     public Vector2Int GridForPiece(GameObject piece)
@@ -209,5 +259,6 @@ public class GameManager : MonoBehaviour
         Player tempPlayer = currentPlayer;
         currentPlayer = otherPlayer;
         otherPlayer = tempPlayer;
+        Debug.Log(currentPlayer.name + "'s turn");
     }
 }
