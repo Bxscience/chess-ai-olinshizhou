@@ -1,0 +1,22 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="GameHome">
+			<method name="GameToHome"/>
+		</type>
+		<type fullname="HomeAI">
+			<method name="GoToAI"/>
+		</type>
+		<type fullname="LoseHome">
+			<method name="LoseToHome"/>
+		</type>
+		<type fullname="WinAI">
+			<method name="WinToAI"/>
+		</type>
+		<type fullname="WinHome">
+			<method name="WinToHome"/>
+		</type>
+		<type fullname="WinMultiplayer">
+			<method name="WinToMultiplayer"/>
+		</type>
+	</assembly>
+</linker>
