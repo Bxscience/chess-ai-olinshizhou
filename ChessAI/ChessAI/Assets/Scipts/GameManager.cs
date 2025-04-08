@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -9,8 +11,6 @@ public class GameManager : MonoBehaviour
     public Board board;
 
     public int aiSearchDepth = 3;
-
-    private List<GameObject> movedPawns;
 
     public GameObject whiteKing;
     public GameObject whiteQueen;
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
         white = new Player("white", true);
         black = new Player("black", false);
 
-        movedPawns = new List<GameObject>();
+        movedPieces = new List<GameObject>();
         currentPlayer = white;
         otherPlayer = black;
 
@@ -135,6 +135,13 @@ public class GameManager : MonoBehaviour
         {
             movedPieces.Add(piece);
         }
+        
+        if (pieceComponent.type == PieceType.Pawn && gridPoint.y == 7)
+        {
+            pieces[gridPoint.x, gridPoint.y] = Instantiate(whiteQueen, Geometry.PointFromGrid(gridPoint), Quaternion.identity);
+            board.MovePiece(pieces[gridPoint.x, gridPoint.y], gridPoint);
+        }
+
 
         if (pieceComponent.type == PieceType.King && !HasKingMoved(piece))
         {
@@ -224,12 +231,12 @@ public class GameManager : MonoBehaviour
 
     public void PawnMoved(GameObject pawn)
     {
-        movedPawns.Add(pawn);
+        movedPieces.Add(pawn);
     }
 
     public bool HasPawnMoved(GameObject pawn)
     {
-        return movedPawns.Contains(pawn);
+        return movedPieces.Contains(pawn);
     }
 
 
@@ -243,9 +250,12 @@ public class GameManager : MonoBehaviour
             Debug.Log("Captured piece type: " + pieceComponent.type);
             if (pieceComponent.type == PieceType.King)
             {
+                if (currentPlayer.name == "black")
+                SceneManager.LoadScene("LoseScreen");
+                else
+                SceneManager.LoadScene("WinScreen");
+
                 Debug.Log(currentPlayer.name + " wins!");
-                Destroy(board.GetComponent<TileSelector>());
-                Destroy(board.GetComponent<MoveSelector>());
             }
             otherPlayer.pieces.Remove(pieceToCapture);
             currentPlayer.capturedPieces.Add(pieceToCapture);
@@ -323,7 +333,7 @@ private IEnumerator AIMakeMove()
 {
     yield return new WaitForSeconds(0.5f);
     
-    SimulatedState state = new SimulatedState(pieces, movedPawns, currentPlayer, otherPlayer,
+    SimulatedState state = new SimulatedState(pieces, movedPieces, currentPlayer, otherPlayer,
                                              currentPlayer.capturedPieces, otherPlayer.capturedPieces);
                                              
     AIMove bestMove = aiEngine.GetBestMove(state, aiSearchDepth);

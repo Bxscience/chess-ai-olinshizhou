@@ -7,6 +7,6 @@ public class HomeAI : MonoBehaviour
 {
     public void GoToAI() 
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GameAI");
     }
 }
