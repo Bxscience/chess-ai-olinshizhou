@@ -1,11 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
     public Board board;
+
+    public int aiSearchDepth = 3;
+
+    private List<GameObject> movedPawns;
 
     public GameObject whiteKing;
     public GameObject whiteQueen;
@@ -29,9 +34,12 @@ public class GameManager : MonoBehaviour
     public Player currentPlayer;
     public Player otherPlayer;
 
+     private AIEngine aiEngine;
+
     void Awake()
     {
         instance = this;
+        aiEngine = new AIEngine();
     }
 
     void Start ()
@@ -42,6 +50,7 @@ public class GameManager : MonoBehaviour
         white = new Player("white", true);
         black = new Player("black", false);
 
+        movedPawns = new List<GameObject>();
         currentPlayer = white;
         otherPlayer = black;
 
@@ -145,11 +154,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public bool HasPawnMoved(GameObject pawn)
-    {
-        return movedPieces.Contains(pawn);
-    }
-
     public bool HasKingMoved(GameObject king)
     {
         return movedPieces.Contains(king);
@@ -218,18 +222,36 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public void PawnMoved(GameObject pawn)
+    {
+        movedPawns.Add(pawn);
+    }
+
+    public bool HasPawnMoved(GameObject pawn)
+    {
+        return movedPawns.Contains(pawn);
+    }
+
+
+
     public void CapturePieceAt(Vector2Int gridPoint)
     {
         GameObject pieceToCapture = PieceAtGrid(gridPoint);
-        if (pieceToCapture.GetComponent<Piece>().type == PieceType.King)
+        if (pieceToCapture != null)
         {
-            Debug.Log(currentPlayer.name + " wins!");
-            Destroy(board.GetComponent<TileSelector>());
-            Destroy(board.GetComponent<MoveSelector>());
+            Piece pieceComponent = pieceToCapture.GetComponent<Piece>();
+            Debug.Log("Captured piece type: " + pieceComponent.type);
+            if (pieceComponent.type == PieceType.King)
+            {
+                Debug.Log(currentPlayer.name + " wins!");
+                Destroy(board.GetComponent<TileSelector>());
+                Destroy(board.GetComponent<MoveSelector>());
+            }
+            otherPlayer.pieces.Remove(pieceToCapture);
+            currentPlayer.capturedPieces.Add(pieceToCapture);
+            pieces[gridPoint.x, gridPoint.y] = null;
+            Destroy(pieceToCapture);
         }
-        currentPlayer.capturedPieces.Add(pieceToCapture);
-        pieces[gridPoint.x, gridPoint.y] = null;
-        Destroy(pieceToCapture);
     }
 
     public void SelectPiece(GameObject piece)
@@ -291,9 +313,44 @@ public class GameManager : MonoBehaviour
 
     public void NextPlayer()
     {
-        Player tempPlayer = currentPlayer;
+        Player temp = currentPlayer;
         currentPlayer = otherPlayer;
-        otherPlayer = tempPlayer;
-        Debug.Log(currentPlayer.name + "'s turn");
+        otherPlayer = temp;
+        if (currentPlayer.name == "black")
+            StartCoroutine(AIMakeMove());
     }
+private IEnumerator AIMakeMove()
+{
+    yield return new WaitForSeconds(0.5f);
+    
+    SimulatedState state = new SimulatedState(pieces, movedPawns, currentPlayer, otherPlayer,
+                                             currentPlayer.capturedPieces, otherPlayer.capturedPieces);
+                                             
+    AIMove bestMove = aiEngine.GetBestMove(state, aiSearchDepth);
+    
+    if (bestMove != null)
+    {
+        GameObject movingPiece = bestMove.piece;
+        Vector2Int targetPosition = bestMove.targetGridPoint;
+        
+        if (movingPiece != null)
+        {
+            if (PieceAtGrid(targetPosition) != null)
+                CapturePieceAt(targetPosition);
+            
+            Move(movingPiece, targetPosition);
+            Debug.Log($"AI moved {movingPiece.name} to {targetPosition}");
+        }
+        else
+        {
+            Debug.LogError("AI selected a null piece to move!");
+        }
+    }
+    else
+    {
+        Debug.LogError("AI did not return a valid move!");
+    }
+    
+    NextPlayer();
+}
 }
